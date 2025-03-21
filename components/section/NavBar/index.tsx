@@ -12,7 +12,7 @@ import {
 
 function NavBar() {
   return (
-    <nav className="absolute top-0 right-0 px-5 py-4 flex lg:gap-20 gap-5 text-xl text-background">
+    <nav className="fixed top-0 right-0 px-5 py-4 flex lg:gap-20 gap-5 text-xl text-background">
       <ul className="hidden lg:flex gap-5 bg-white lg:px-5 lg:py-2 px-1 py-1 rounded-full justify-center items-center shadow-lg shadow-gray-950">
         <li>Home</li>
         <li>Projetos</li>

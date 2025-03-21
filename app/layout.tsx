@@ -19,6 +19,14 @@ const ribeyeMarrow = Ribeye_Marrow({
 export const metadata: Metadata = {
   title: "Anderson Costa - Dev",
   description: "Welcome to my portfolio",
+  viewport: "width=device-width, initial-scale=1.0",
+  keywords: "HTML, CSS, JavaScript, React, Next.js, Tailwind CSS, TypeScript",
+  authors: [
+    { name: "Anderson Costa", url: "https://github.com/AndersonCostaDev01" },
+  ],
+  icons: {
+    icon: "/logo.svg",
+  },
 };
 
 export default function RootLayout({
