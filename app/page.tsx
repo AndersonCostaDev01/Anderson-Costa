@@ -1,4 +1,5 @@
 import Abautme from "@/components/section/Abautme";
+import Contact from "@/components/section/Contact";
 import Hero from "@/components/section/Hero";
 import NavBar from "@/components/section/NavBar";
 import Projects from "@/components/section/Projects";
@@ -16,6 +17,7 @@ export default function Home() {
       <Services />
       <Skils />
       <Projects />
+      <Contact />
     </>
   );
 }

@@ -1,0 +1,12 @@
+.div {
+  background: linear-gradient(
+      to top,
+      /* Define a direção do gradiente */ rgba(0, 31, 33, 1) 0%,
+      rgba(0, 31, 33, 0) 40%,
+      rgba(0, 31, 33, 1) 100%
+    ),
+    url("/fundo.jpg");
+  background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+}
