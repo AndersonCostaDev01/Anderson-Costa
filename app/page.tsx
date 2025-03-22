@@ -18,6 +18,9 @@ export default function Home() {
       <Skils />
       <Projects />
       <Contact />
+      <footer className="flex justify-center items-center p-4">
+        <p>Copyright © Anderson Costa - 2025</p>
+      </footer>
     </>
   );
 }
