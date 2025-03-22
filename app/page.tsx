@@ -1,3 +1,4 @@
+import Abautme from "@/components/section/Abautme";
 import Hero from "@/components/section/Hero";
 import NavBar from "@/components/section/NavBar";
 
@@ -8,6 +9,7 @@ export default function Home() {
         <NavBar />
         <Hero />
       </header>
+      <Abautme />
     </>
   );
 }

@@ -32,7 +32,7 @@ function NavBar() {
           </Link>
         </li>
         <li>
-          <Link href={"#"} className="hover:text-amber-500 transition">
+          <Link href={"#sobre"} className="hover:text-amber-500 transition">
             Sobre mim
           </Link>
         </li>
@@ -87,7 +87,7 @@ function NavBar() {
               Home
             </Link>
             <Link
-              href={"#"}
+              href={"#sobre"}
               className="mx-5 my-2 bg-amber-50 text-center text-background rounded-full"
             >
               Sobre mim
