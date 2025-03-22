@@ -42,7 +42,7 @@ function NavBar() {
           </Link>
         </li>
         <li>
-          <Link href={"#"} className="hover:text-amber-500 transition">
+          <Link href={"#projetos"} className="hover:text-amber-500 transition">
             Projetos
           </Link>
         </li>
@@ -99,7 +99,7 @@ function NavBar() {
               Serviços oferecidos
             </Link>
             <Link
-              href={"#"}
+              href={"#projetos"}
               className="mx-5 my-2 bg-amber-50 text-center text-background rounded-full"
             >
               Projetos

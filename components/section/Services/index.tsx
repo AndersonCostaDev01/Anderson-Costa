@@ -75,7 +75,7 @@ export default function Services() {
             <CarouselContent>
               {services.map((service, index) => (
                 <CarouselItem key={index}>
-                  <div className="flex flex-col gap-7 text-center text-xl justify-center border border-gray-500 mx-auto p-4 rounded-2xl h-[500px] w-[400px] lg:w-[500px]">
+                  <div className="flex flex-col gap-7 text-center text-xl justify-center border border-gray-500 mx-auto p-4 rounded-2xl h-[600px] w-[300px] lg:w-[500px]">
                     <h2 className="text-3xl">{service.title}</h2>
                     <p>{service.description}</p>
                     <Image
