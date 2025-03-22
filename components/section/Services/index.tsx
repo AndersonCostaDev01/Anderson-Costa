@@ -65,7 +65,7 @@ export default function Services() {
             Qualquer dúvida entre em contato pelo <FaWhatsapp />
           </Link>
         </div>
-        <div className="w-[700px]">
+        <div className="lg:w-[700px]">
           <Carousel
             plugins={[plugin.current]}
             className="w-full"
