@@ -1,6 +1,7 @@
 import Abautme from "@/components/section/Abautme";
 import Hero from "@/components/section/Hero";
 import NavBar from "@/components/section/NavBar";
+import Services from "@/components/section/Services";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <Hero />
       </header>
       <Abautme />
+      <Services />
     </>
   );
 }
