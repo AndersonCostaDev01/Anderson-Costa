@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import { FaWhatsapp } from "react-icons/fa";
 import React from "react";
 
 const services = [
