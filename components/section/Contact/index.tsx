@@ -43,9 +43,9 @@ const contact: ContactProps[] = [
 ];
 function Contact() {
   return (
-    <div className="div">
-      <section id="contato" className="container mx-auto mt-5 lg:pb-40">
-        <h2 className="text-3xl text-center mb-4">Contatos</h2>
+    <div className="div pt-2 mt-25">
+      <section id="contato" className="container mx-auto mt-25 lg:pb-40">
+        <h2 className="text-3xl text-center mb-4 pt-5">Contatos</h2>
         <div className="flex flex-col gap-4 lg:flex-row justify-center items-center">
           {contact.map((cont) => (
             <div className="lg:p-0 px-4 flex justify-center" key={cont.name}>

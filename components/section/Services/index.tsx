@@ -2,98 +2,62 @@
 import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa";
 import React from "react";
-import Autoplay from "embla-carousel-autoplay"; // Certifique-se de ter essa dependência instalada
 
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-import Image from "next/image";
-
-type ServicesProps = {
-  title: string;
-  description: string;
-  link: string;
-};
-
-const services: ServicesProps[] = [
+const services = [
   {
-    title: "Desenvolvimento de sites",
-    description:
-      "Crie um site incrivel para sua empresa ou negócio com nosso desenvolvimento de sites",
-    link: "/mockup.png",
+    name: "Desenvolvimento Web",
+    description: "Desenvolvimento de sites e aplicativos web",
   },
   {
-    title: "Criação de logotipos",
-    description:
-      "Crie um logotipo incrivel para sua empresa ou negócio com nossa criação de logotipos",
-    link: "/logo.svg",
+    name: "Desenvolvimento Mobile",
+    description: "Desenvolvimento de aplicativos mobile",
   },
   {
-    title: "Criação de identidade visual",
-    description:
-      "Crie uma identidade visual incrivel para sua empresa ou negócio com nossa criação de identidade visual",
-    link: "/heroImage.png",
+    name: "Desenvolvimento de aplicativos webs",
+    description: "Desenvolvimento de aplicativos webs para seu negócio", 
   },
+  {
+    name: "Desenvolvimento de automatizacoes",
+    description: "Desenvolvimento de automatizacoes para melhorar seu negocio",
+  }
 ];
 
-export default function Services() {
-  const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
-  );
 
-  return (
+
+export default function Services() {
+    return (
     <section id="servicos" className="container mx-auto mt-5">
-      <div className="flex flex-col lg:flex-row lg:justify-between gap-4 lg:p-0 px-4">
-        <div className="flex flex-col gap-7 text-center text-xl max-w-2xl lg:mt-28">
-          <h2 className="text-3xl">
-            Veja os serviços disponíveis para solicitar
-          </h2>
-          <p>
-            Os serviços disponíveis podem melhorar e muito sua apresentação
-            digital, desde uma primeira impressão até a conquista de seus
-            clientes.
-          </p>
-          <Link
-            target="_blank"
-            href="https://wa.me/5583991651441"
-            className="flex gap-2 bg-white text-background rounded-full justify-center items-center px-4 py-2 border border-background shadow-lg hover:bg-gray-100 transition"
-          >
-            Qualquer dúvida entre em contato pelo <FaWhatsapp />
-          </Link>
+      <div className="flex flex-col gap-10 text-center text-xl ">
+        <h2 className="text-3xl">Serviços</h2>
+        <p>
+          Aqui ofereço diversos serviçoes para facilitar sua vida no mundo digital,
+          seja para criar uma imagem digital ou uma automação para melhorar seu
+          negocio
+        </p>
+        <h3>Exemplos de serviços ofertados: </h3>
+        <div className="whitespace-normal">
+          <div className="flex flex-col gap-8 lg:flex-row justify-center items-center">
+          {services.map((service) => (
+            <div
+              className="border border-gray-200 flex flex-col gap-2 items-center justify-center rounded-2xl h-[200px] w-[200px] p-4"
+              key={service.name}
+            >
+              <div className="flex flex-col justify-center items-center">
+                <h4 className="font-bold text-center break-words">{service.name}</h4>
+              </div>
+              <p className="text-sm w-full text-center break-words max-w-[160px] whitespace-normal">
+                {service.description}
+              </p>
+            </div>
+          ))}
         </div>
-        <div className="lg:w-[700px]">
-          <Carousel
-            plugins={[plugin.current]}
-            className="w-full"
-            onMouseEnter={() => plugin.current?.stop?.()}
-            onMouseLeave={() => plugin.current?.reset?.()}
-          >
-            <CarouselContent>
-              {services.map((service, index) => (
-                <CarouselItem key={index}>
-                  <div className="flex flex-col gap-7 text-center text-xl justify-center border border-gray-500 mx-auto p-4 rounded-2xl h-[600px] w-[300px] lg:w-[500px]">
-                    <h2 className="text-3xl">{service.title}</h2>
-                    <p>{service.description}</p>
-                    <Image
-                      src={service.link}
-                      alt={service.title}
-                      width={500}
-                      height={500}
-                      className="object-cover w-300 lg:w-[300px] xl:w-[300px]"
-                    />
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious className="absolute bottom-0 left-2" />
-            <CarouselNext className="absolute bottom-0 right-2" />
-          </Carousel>
         </div>
+
+        <Link href={"https://wa.me/5583991651441"} target="_blank" className=" bg-white text-center text-background rounded-full hover:bg-gray-500 transition px-4 py-2 border border-background w-[300px] lg:w-[500px] self-center">
+        Qualquer serviço ou projeto, entre em contato comigo por <b className="font-bold">whatsapp</b>
+      </Link>
       </div>
+      <div className="bg-white w-full h-[1.5px] mt-15 rounded"/>
     </section>
   );
 }

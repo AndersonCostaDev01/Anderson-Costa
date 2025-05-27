@@ -51,9 +51,9 @@ function NavBar() {
             Contatos
           </Link>
         </li>
-        <li className="bg-background text-white lg:px-5 lg:py-2 px-2 py-1 rounded-full hover:bg-amber-500 transition-colors">
+        <li>
           <AlertDialog>
-            <AlertDialogTrigger>CV</AlertDialogTrigger>
+            <AlertDialogTrigger className="text-background lg:px-5 lg:py-2 px-2 py-1 rounded-full hover:bg-background hover:text-white transition-colors cursor-pointer">CV</AlertDialogTrigger>
             <AlertDialogContent>
               <AlertDialogHeader>
                 <AlertDialogTitle>Deseja baixar o CV?</AlertDialogTitle>
@@ -110,6 +110,27 @@ function NavBar() {
             >
               Contatos
             </Link>
+         
+            <AlertDialog>
+              <AlertDialogTrigger className="mx-5 my-2 bg-amber-50 text-center text-background rounded-full">CV</AlertDialogTrigger>
+              <AlertDialogContent>
+                <AlertDialogHeader>
+                  <AlertDialogTitle>Deseja baixar o CV?</AlertDialogTitle>
+                  <AlertDialogDescription>
+                    Ao clicar voce ira baixar o Curriculo virtual
+                  </AlertDialogDescription>
+                </AlertDialogHeader>
+                <AlertDialogFooter>
+                  <AlertDialogCancel>Cancel</AlertDialogCancel>
+                  <AlertDialogAction>
+                    <a href="/cv.docx" download>
+                      Confirma
+                    </a>
+                  </AlertDialogAction>
+                </AlertDialogFooter>
+              </AlertDialogContent>
+            </AlertDialog>
+
           </SheetHeader>
         </SheetContent>
       </Sheet>
