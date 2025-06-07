@@ -1,3 +1,5 @@
+import '../../assets/andersonCosta.png.jpg' 
+
 function Sobre () {
     return (
         <div className="mt-10 container flex mx-auto p-3 flex-col-reverse md:flex-row md:justify-between" id="sobre">
@@ -23,12 +25,12 @@ function Sobre () {
             </div>
             <div className="relative md:w-2xl md:h-2xl flex items-center">
                 <img
-                    src="./src/assets/andersonCosta1.png.jpg"
+                    src="../../assets/andersonCosta1.png.jpg"
                     alt="Anderson Costa"
                     className="block w-full h-full rounded-2xl"
                 />
                 <img
-                    src="./src/assets/andersonCosta.png"
+                    src="../../assets/andersonCosta.png"
                     alt="Anderson Costa"
                     className="absolute top-0 left-0 transition-opacity duration-300 hover:opacity-0 cursor-pointer w-full h-full active:opacity-0 rounded-2xl"
                 />
