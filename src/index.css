@@ -73,8 +73,9 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
-  transition: all 0.2s ease-in-out;
+  color: rgba(55, 0, 255, 1);
+  text-decoration: underline;
+  transition: all 0.4s ease-in-out;
 }
 
 @media (prefers-color-scheme: light) {
@@ -83,7 +84,7 @@ a:hover {
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: rgba(55, 0, 255, 1);
   }
   button {
     background-color: #f9f9f9;
@@ -169,4 +170,14 @@ a:hover {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.gradient {
+  background-image: linear-gradient(
+    180deg,
+    rgba(55, 0, 255, 1) 0%,
+    rgba(55, 0, 255, 1) 10%,
+    rgba(55, 0, 255, 0.7) 25%,
+    rgba(0, 0, 0, 0)
+  );
 }

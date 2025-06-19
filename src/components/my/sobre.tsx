@@ -1,7 +1,9 @@
 function Sobre () {
     return (
-        <div className="mt-10 container flex mx-auto p-3 flex-col-reverse md:flex-row md:justify-between" id="sobre">
-            <div className="w-fit h-auto mt-6">
+        <div
+        className="mt-10 container flex mx-auto p-3 flex-col-reverse md:flex-row md:justify-between" 
+        id="sobre">
+            <div className="w-full h-auto mt-6">
                 <h1 className="text-4xl font-bold text-zinc-600 gap-2">
                     Anderson Costa - <b>Desenvolvedor Full-stack</b>
                 </h1>

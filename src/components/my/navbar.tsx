@@ -7,7 +7,7 @@ function Navbar() {
         <div className=" justify-center p-2 flex relative">
             {/* desktop */}
             <div className="w-[80%] bg-zinc-600 h-fit justify-center rounded-2xl p-1 hidden md:flex">
-                <img src="./public/Vector.svg" alt="Anderson Costa" className="w-15 mx-5"/>
+                <img src="/Vector.svg" alt="Anderson Costa" className="w-15 mx-5"/>
                 <ul className="flex gap-6 flex-row-reverse w-full mx-10 text-white self-center">
                     <li className="text-white">
                         <a href="#sobre" className="text-white">Sobre</a>
@@ -31,7 +31,7 @@ function Navbar() {
                 >※</button>
             </div>
             {isOpen && (
-                <div className="w-full h-fit rounded-2xl p-1 flex md:hidden px-6 flex-row-reverse bg-zinc-600">
+                <div className="w-full h-fit rounded-2xl py-2 flex md:hidden px-6 flex-row-reverse bg-zinc-600">
                     <ul className="flex gap-6 flex-col w-full mx-10 text-white self-center">
                         <li className="text-white">
                             <a href="#sobre" className="text-white">Sobre</a>
