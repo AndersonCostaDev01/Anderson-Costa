@@ -4,12 +4,12 @@ function Sobre () {
         className="mt-10 container flex mx-auto p-3 flex-col-reverse md:flex-row md:justify-between" 
         id="sobre">
             <div className="w-full h-auto mt-6">
-                <h1 className="text-4xl font-bold text-zinc-600 gap-2">
+                <h1 className="text-4xl font-bold gap-2">
                     Anderson Costa - <b>Desenvolvedor Full-stack</b>
                 </h1>
-                <h2 className="text-2xl font-bold text-zinc-600">
+                <h2 className="text-2xl font-bold mt-5 underline text-center">
                     "Com códigos, construo o caminho para o futuro — do backend à interface, transformo ideias em soluções."
-                    <span className="text-zinc-600">🚀</span>
+                    <span>🚀</span>
                 </h2>
                 <p className="mt-5">
                     Prazer me chamo <b>Anderson Costa</b> Sou um desenvolvedor full-stack apaixonado por tecnologia e

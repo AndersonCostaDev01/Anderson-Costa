@@ -8,9 +8,9 @@ function App() {
 
   return (
     <div className="bg-zinc-200">
-      <div 
+      <div  
       className="h-[400px] w-full absolute gradient"/>
-      <div className="relative z-10">
+      <div className="relative z-10 w-[90%] mx-auto">
         <Navbar />
         <Sobre />
         <Servicos />
