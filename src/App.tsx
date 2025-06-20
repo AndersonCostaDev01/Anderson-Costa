@@ -1,3 +1,4 @@
+import Contatos from "./components/my/contatos"
 import Navbar from "./components/my/navbar"
 import Projetos from "./components/my/projetos"
 import Servicos from "./components/my/servicos"
@@ -16,6 +17,11 @@ function App() {
         <Servicos />
         <Projetos />
       </div>
+      <Contatos />
+      <footer className="flex flex-col items-center gap-2 py-5">
+        <p>Desenvolvido por Anderson Costa</p>
+        <p>2024 - 2025</p>
+      </footer>
     </div>
   )
 }

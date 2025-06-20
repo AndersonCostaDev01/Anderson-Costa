@@ -53,7 +53,7 @@ function Projetos() {
                 opts={{loop: true,}}
                 plugins={[
                 Autoplay({
-                    delay: 2000,
+                    delay: 3000,
                     stopOnFocusIn: true
                 })    
                 ]}
