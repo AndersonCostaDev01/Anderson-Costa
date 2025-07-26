@@ -47,14 +47,16 @@ function Projetos() {
     ]
 
     return (
-        <div className="mt-10 container flex mx-auto py-3 flex-col" id="projetos">
+        <div className="mt-10 flex mx-auto py-3 flex-col" id="projetos">
             <h3 className="text-2xl font-bold text-center mb-2">projetos</h3>
             <Carousel
                 opts={{loop: true,}}
                 plugins={[
                 Autoplay({
                     delay: 3000,
-                    stopOnFocusIn: true
+                    stopOnFocusIn: true,
+                    stopOnInteraction: true,
+                    stopOnLastSnap: true
                 })    
                 ]}
             >
@@ -76,12 +78,12 @@ function Projetos() {
                                 <a 
                                 href={project.link} 
                                 target="_blank"
-                                className="underline bg-zinc-500 w-fit px-2 md:px-4 py-1 rounded-2xl mb-3 text-sm md:text-md">Veja na integra</a>
+                                className="underline w-fit px-2 md:px-4 py-1 rounded-2xl mb-3 text-sm md:text-md">Veja na integra</a>
                             </div>
                             </div>
                         <iframe 
                         src={project.link} 
-                        className="w-full h-[300px]"/>
+                        className="w-full h-[600px]"/>
                     </CarouselItem>
                     ))}
                 </CarouselContent>

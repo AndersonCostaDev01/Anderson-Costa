@@ -2,7 +2,7 @@ function Hero () {
     return (
         <div 
         id="sobre"
-        className="container flex mx-auto flex-col-reverse md:flex-row md:justify-between pt-10 h-screen md:mb-0 mb-17">
+        className="container flex mx-auto flex-col-reverse md:flex-row md:justify-between pt-10 h-screen md:mb-0 mb-24">
             <div className="w-full h-3/6 mt-6 text-white flex flex-col  justify-center">
                 <h1 className="text-4xl font-bold gap-2">Ola Me chamo <b className="text-[#A66A00]">Anderson Costa</b></h1>
                 <h2 className="text-2xl font-bold mt-5 underline">Sou um desenvolvedor full-stack apaixonado por tecnologia e inovação</h2>

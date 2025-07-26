@@ -24,7 +24,7 @@ function Navbar() {
                 </ul>
             </div>
             {/* responsive */}
-            <div className="w-full h-fit justify-between p-1 flex md:hidden px-6 flex-row-reverse absolute bg-[#A66A00]">
+            <div className="w-full h-fit justify-between p-1 flex md:hidden px-6 flex-row-reverse absolute bg-[#A66A00] mb-5">
                 <img src="/images/andersonCosta1.png.jpg" alt="anderson costa" className="w-15 rounded-full"/>
                 <button 
                 className="text-zinc-100 w-15 h-15 flex items-center justify-center transition-all" 
