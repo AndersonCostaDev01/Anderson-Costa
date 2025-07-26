@@ -4,9 +4,9 @@ import { useState } from "react";
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <div className=" justify-center p-2 flex relative">
+        <div className=" justify-center flex sticky top-0">
             {/* desktop */}
-            <div className="w-[80%] bg-zinc-600 h-fit justify-center rounded-2xl p-1 hidden md:flex">
+            <div className="w-full hidden md:flex bg-[#A66A00] p-2">
                 <img src="/Vector.svg" alt="Anderson Costa" className="w-15 mx-5"/>
                 <ul className="flex gap-6 flex-row-reverse w-full mx-10 text-white self-center">
                     <li className="text-white">
@@ -24,14 +24,15 @@ function Navbar() {
                 </ul>
             </div>
             {/* responsive */}
-            <div className="w-full h-fit justify-between rounded-2xl p-1 flex md:hidden px-6 flex-row-reverse absolute">
+            <div className="w-full h-fit justify-between p-1 flex md:hidden px-6 flex-row-reverse absolute bg-[#A66A00]">
+                <img src="/images/andersonCosta1.png.jpg" alt="anderson costa" className="w-15 rounded-full"/>
                 <button 
-                className="bg-zinc-600 text-zinc-100 w-8 h-8 rounded-md hover:bg-zinc-700 active:bg-zinc-800 transition-all" 
+                className="text-zinc-100 w-15 h-15 flex items-center justify-center transition-all" 
                 onClick={() => setIsOpen(!isOpen)}
                 >※</button>
             </div>
             {isOpen && (
-                <div className="w-full h-fit rounded-2xl py-2 flex md:hidden px-6 flex-row-reverse bg-zinc-600">
+                <div className="w-full h-fit rounded-2xl py-2 flex md:hidden px-6 flex-row-reverse bg-[#A66A00] mt-5">
                     <ul className="flex gap-6 flex-col w-full mx-10 text-white self-center">
                         <li className="text-white">
                             <a href="#sobre" className="text-white">Sobre</a>

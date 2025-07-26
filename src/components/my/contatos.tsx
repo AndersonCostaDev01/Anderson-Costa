@@ -9,7 +9,7 @@ import { MdOutlineAlternateEmail } from "react-icons/md";
 
 function Contatos() {
     return (
-        <div className="mt-16 container flex mx-auto contatos h-[150px] w-full" id="contato">
+        <div className="mt-16 flex mx-auto contatos h-[150px] w-full" id="contato">
             <div className="flex flex-col w-[80%] mx-auto  items-center">
                 <h3 className="text-2xl font-bold textc">Entre em contato comigo</h3>
                 <ul className="mt-6 flex gap-4">
